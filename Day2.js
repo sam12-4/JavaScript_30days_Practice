@@ -14,9 +14,9 @@ console.log("Value of v2 after swapping is : ", v2);
 
 // Javascript Program to Solve Quadratic Equation
 let root1, root2;
-let a = prompt("Enter the first number: ");
-let b = prompt("Enter the second number: ");
-let c = prompt("Enter the third number: ");
+let a = 5
+let b =  6;
+let c = 5;
 
 let discriminant = Math.pow(b, 2) - 4*a*c;
 console.log(discriminant);
@@ -35,3 +35,9 @@ else{
     let imagpart = (Math.sqrt(-discriminant)/ (2*a)).toFixed(2);
     console.log('The roots are '+realPart+' + i'+imagpart + ' and ' + realPart + " - i" + imagpart);
 }
+
+// JavaScript Program to Convert Kilometers to Miles
+
+let mile  = 0.621371; 
+let km  = prompt("Enter the value in Kilometers")
+alert ("The Value in miles is =" + (km * mile).toFixed(2) ) ;
