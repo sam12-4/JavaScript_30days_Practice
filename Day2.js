@@ -39,5 +39,11 @@ else{
 // JavaScript Program to Convert Kilometers to Miles
 
 let mile  = 0.621371; 
-let km  = prompt("Enter the value in Kilometers")
-alert ("The Value in miles is =" + (km * mile).toFixed(2) ) ;
+let km  = 34;
+console.log("The Value in miles is " + (km * mile).toFixed(2) ) ;
+
+// Javascript Program to Convert Celsius to Fahrenheit
+
+let  celsius = prompt("Enter Temperature in Celsius");
+let fahreinheit = ((celsius * 9/5)+32) ; 
+alert(`The Temperature of ${celsius} ${<script>&deg;</script>} is ${fahreinheit}`);
