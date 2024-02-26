@@ -46,3 +46,73 @@ for (let i = 1; i <= 3; i++) {
 }
 
 console.log(numbers);
+
+
+// Filtering
+// const arr = [1,2,5,7,9,4,24,6,2,53,24,2,1]
+
+// const list = arr.filter((item)=>
+//    (item>5)
+// )
+
+// console.log(list)
+
+// Faulty Calculator
+// let a1 = prompt("Enter First Number");
+// let op = prompt("Enter Operation");
+// let a3 = prompt("Enter Third Number");
+// let random = Math.random();
+
+// let obj = {
+//     "+" : "-",
+//     "-" : "+",
+//     "*" : "/",
+//     "/" : "**"
+// }
+// console.log(obj["+"])
+ 
+// let result1;
+// if (random>0.1){
+//     result1 = `The result is ${eval(`${a1}${op}${a3}`)}`
+//     alert(result1)
+// }
+// else{
+//     result1 = `The result is ${eval(`${a1}${obj[`${op}`]}${a3}`)}`
+//     alert(result1)
+// }
+
+// Business Name Generator
+
+adjectives = "Crazy"
+shopName = "Engine","Foods","Garments"
+anotherWord = "Bros","Limited","Hub"
+console.log(adjectives[0])
+
+a = 2;
+switch (a){
+    case 2 :
+        console.log("2 found")
+}
+
+const arr = [1,2,5,7,9,4,24,6,2,53,24,2,1]
+
+// for in gives key, for of gives value
+
+for (i in arr){
+    console.log(arr[i]);
+}
+
+arr.forEach(element => {
+    console.log(element)
+});
+
+for (let index = 0; index < arr.length; index++) {
+    console.log(arr[index])
+}
+
+sameer = "Succeeded"
+
+while (sameer !== "Succeeded"){
+    console.log("Very less time left pleae succeed")
+}
+// JavaScript notes till page 13 done
