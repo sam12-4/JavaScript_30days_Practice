@@ -115,3 +115,17 @@ reduceResult = redArray.reduce((a,b)=>{
 })
 
 console.log(reduceResult)
+
+
+//     ----- DOM MANIPULATION  EXCERCISES ----
+
+document.body.childNodes // will give all childnodes of  the body tag including text beacuse it is not an element its a node similarly comment is also a node
+document.body.childElementCount // will  give the number of child elements in body tag
+document.body.children // will give  HTMLCollection of all element children
+document.body.children[0] // will give the specified  child node    
+document.body.firstElementChild // will give first Element child  
+document.body.firstElementChild.childNodes.length // will  give the number of child nodes for the first element
+document.body.firstElementChild.lastElementChild.parentElement // will give  parent of last element child
+document.body.firstElementChild.lastElementChild.style.fontSize = "35px" // will  change font size of last element child
+document.body.firstElementChild.lastElementChild.style.color = "white" // will  change color of text to white
+document.body.firstElementChild.lastElementChild.style.backgroundColor = "green" // will  change background color of text to green
