@@ -29,4 +29,4 @@ document.body.childNodes[1].lastChild.previousSibling.style.backgroundColor = "b
 document.body.childNodes[1].firstChild.nextSibling.style.color = "white";
 document.body.childNodes[1].firstChild.nextSibling.style.backgroundColor = "brown";
 
-// document.designMode = "on"
+// document.designMode = "on" enables design mode for contenteditable div
