@@ -5,24 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<link rel="stylesheet" href="style.css">
 <style> 
-    .box{
-        height: 30px ;
-        width: 60px ;
-        margin: 5px;
-        padding: 5px;
-        border : 2px solid red
-
-    }
 </style>
 <body>
     <div class="container">
-        <div class="box boxes">Box 1</div>
-        <div id="id-box" class="box boxes">Box 2</div>    
-        <div class="box boxes">Box 3</div>
-        <div class="box boxes">Box 4</div>
-        <div class="box boxes">Box 5</div>
+        <div class="card">
+            <div class="img">
+                <img id="image" src="hqdefault.webp" alt="" srcset="">
+            </div>
+            <div class="content">
+                <div class="title">Excercise 5 - Html</div>
+                <div class="one-line-content">
+                    <div class="Cname">Code with Harry</div>
+                    <div class="views">547k views</div>
+                    <div class="months">5 months ago</div>
+                </div>
+            </div>
+        </div>
+        <button onclick="dynamicBuilder()">Change Content</button>
+        <form>
+            <label for="uploadImage">Update image:</label>
+            <input type="file" id="uploadImage" name="image" accept="image/jpeg, image/png, image/jpg">
+          </form>
     </div>
-    <script src="Day6.js"></script>
+    <script src="Day7.js"></script>
 </body>
 </html>

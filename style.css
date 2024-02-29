@@ -1,0 +1,44 @@
+.one-line-content{
+    display: flex;
+    gap: 8px;
+}
+
+.container{
+    margin: 5px;
+    padding: 5px;
+}
+.content{
+    display: flex;
+    flex-direction:column;
+    gap: 6px;
+}
+
+.card{
+    border: 1px solid black;
+    border-radius: 4px;
+    display: flex;
+    padding: 5px;
+    width: fit-content;
+    gap: 4px;
+}
+
+label{
+    cursor: pointer;
+    margin:0px 0px 0px 4px;
+    padding: 5px;
+    border:2px solid blanchedalmond;
+    border-radius: 4px;
+
+}
+input{
+    visibility: hidden;
+    
+}
+form{
+    margin-top: 12px;
+}
+
+img#image {
+    width: fit-content;
+    height: 130px;
+}
