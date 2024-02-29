@@ -15,5 +15,5 @@ uploadImage.onchange= function(){
     image.src = URL.createObjectURL(uploadImage.files[0])
 }
 
-// webTitle = prompt("Enter title")
+// webTitle = prompt("Enter title") 
 // dynamicBuilder(webTitle,  "Code with Sameer","32 views",  "3 months ago")
