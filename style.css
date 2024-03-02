@@ -20,25 +20,46 @@
     padding: 5px;
     width: fit-content;
     gap: 4px;
+    margin: 5px;
+    width: 600px;
 }
 
-label{
+#takeimage{
     cursor: pointer;
     margin:0px 0px 0px 4px;
     padding: 5px;
-    border:2px solid blanchedalmond;
+    border:2px solid cadetblue;
     border-radius: 4px;
 
 }
-input{
+input#uploadImage{
     visibility: hidden;
     
 }
 form{
     margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    gap: 10px;
 }
 
 img#image {
     width: fit-content;
-    height: 130px;
+    height: 100px;
+    border-radius: 10px;
+}
+.img{
+    position: relative;
+}
+
+.capsule {
+    position: absolute;
+    bottom: 8px;
+    right: 5px;
+    color: white;
+    background: black;
+    padding: 2px;
+    border-radius: 5px;
+    font-size: 12px;
 }

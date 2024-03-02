@@ -1,34 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<link rel="stylesheet" href="style.css">
-<style> 
-</style>
-<body>
+  </head>
+  <link rel="stylesheet" href="style.css" />
+  <style></style>
+  <body>
     <div class="container">
-        <div class="card">
-            <div class="img">
-                <img id="image" src="hqdefault.webp" alt="" srcset="">
-            </div>
-            <div class="content">
-                <div class="title">Excercise 5 - Html</div>
-                <div class="one-line-content">
-                    <div class="Cname">Code with Harry</div>
-                    <div class="views">547k views</div>
-                    <div id="monthsevent" class="months">5 months ago</div>
-                </div>
-            </div>
+      <div class="card">
+        <div class="img">
+          <img id="image" src="hqdefault.webp" alt="" srcset="" />
+          <div class="capsule">2:00</div>
         </div>
-        <button onclick="dynamicBuilder()">Change Content</button>
-        <form>
-            <label for="uploadImage">Update image:</label>
-            <input type="file" id="uploadImage" name="image" accept="image/jpeg, image/png, image/jpg">
-        </form>
+        <div class="content">
+          <div class="title">Excercise 5 - Html</div>
+          <div class="one-line-content">
+            <div class="cName">Code with Harry</div>
+            <div class="views">. 547k views</div>
+            <div id="monthsevent" class="months">. 5 months ago</div>
+          </div>
+        </div>
+      </div>
     </div>
+    <form class="form">
+      <label for="title">Enter title</label>
+      <input type="text" name="title" id="title" />
+      <label for="duration">Enter duration</label>
+      <input type="text" name="duration" id="duration" />
+      <label for="cName">Enter Channel Name</label>
+      <input type="text" name="cName" id="cName" />
+      <label for="views">Enter Views</label>
+      <input type="text" name="views" id="views" />
+      <label for="m_Ago">Enter Months ago</label>
+      <input type="text" name="m_Ago" id="m_Ago" />
+      <label id="takeimage" for="uploadImage">Upload image:</label>
+      <input
+        type="file"
+        id="uploadImage"
+        name="image"
+        accept="image/jpeg, image/png, image/jpg"
+      />
+    </form>
+
+    <button id="dynamicBuilder">Change Content</button>
     <script src="Day9.js"></script>
-</body>
+  </body>
 </html>
