@@ -46,10 +46,10 @@ prevent=(div, length)=>{
 
 viewsConvert=(views)=>{
     if (parseInt(views)>1000 && parseInt(views)<1000000){
-        return (views/1000).toFixed(1) + "k ";
+        return (views/1000).toFixed(0) + "k ";
     }
     else if (parseInt(views)>1000000){
-        return (views/1000000).toFixed(1) + "M ";
+        return (views/1000000).toFixed(0) + "M ";
     }
     else{
         return views
