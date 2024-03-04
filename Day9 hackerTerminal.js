@@ -32,7 +32,8 @@ for (let i of arr) {
 
 clearHidden().then(()=>{
     clearInterval(intervalid);
-    document.body.children[5].innerText = "Successfully Hacked ..."
+    document.body.children[5].hidden = false   
+    document.body.children[5].innerText += " Successfully Hacked ..."
 }).then(()=>{
     document.body.children[6].hidden = false   
 }).then(()=>{
