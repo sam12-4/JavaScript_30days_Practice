@@ -1,0 +1,22 @@
+.border{
+    border: 2px solid red;
+}
+.m-1{
+    margin: 1px;
+}
+
+.invert{
+    filter: invert(1);
+}
+
+.d-flex{
+    display: flex;
+}
+
+.border-section{
+    border-radius: 10px;
+}
+
+.invert-right{
+    filter: invert(0.7);
+}
