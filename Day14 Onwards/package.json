@@ -1,0 +1,20 @@
+{
+  "name": "day14",
+  "version": "1.0.0",
+  "description": "This is day14 work",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "day14",
+    "coding",
+    "javascript"
+  ],
+  "author": "sameer",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.3"
+  }
+}
