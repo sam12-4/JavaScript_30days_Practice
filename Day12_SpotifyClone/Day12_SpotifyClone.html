@@ -3,13 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image" href="favicon.ico">
     <link rel="stylesheet" href="Day12_SpotifyClone.css" />
     <link rel="stylesheet" href="Day12_SpotifyClone_Utility.css" />
     <title>Spotify Clone</title>
   </head>
   <body>
     <div class="container">
-      <div class="left m-1">
+      <div class="left">
         <div class="home border-section">
           <div class="logo padding-left">
             <img class="invert" src="logo.svg" alt="logo" />
@@ -30,6 +31,11 @@
               <img class="plus invert-right" src="plus.svg" alt="" />
             </li>
           </ul>
+          <div class="songsList">
+            <ul>
+             
+            </ul>
+          </div>
         </div>
         <div class="left-footer padding-left">
           <span>Legal</span>
@@ -43,7 +49,123 @@
           <span>Cookies</span>
         </div>
       </div>
-      <div class="right border m-1"></div>
+      <div class="right m-1">
+        <div class="header">
+          <div class="arrows">
+            <button>
+              <img src="leftArrow.svg" alt="" />
+            </button>
+            <button>
+              <img src="rightArrow.svg" alt="" />
+            </button>
+          </div>
+          <div class="call-to-action">
+            <div class="button-box">
+              <a href="#">Sign Up</a>
+            </div>
+            <div class="button-box">
+              <a href="#">Log in</a>
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="popular-artists">
+            <h3>Popular artists</h3>
+            <a href="">show all</a>
+          </div>
+          <div class="cards">
+          <div class="card">
+            <div class="imgs">
+              <img src="1.jfif" alt="Artist Image" />
+              <img src="play.svg" alt="" />
+            </div>
+            <h4>Jay Chuo</h4>
+            <p>With Selena Gomez, Olivia Rodrigo, Katy Perry and more</p>
+          </div>
+          <div class="card">
+            <div class="imgs">
+              <img src="1.jfif" alt="Artist Image" />
+              <img src="play.svg" alt="" />
+            </div>
+            <h4>Jay Chuo</h4>
+            <p>With Selena Gomez, Olivia Rodrigo, Katy Perry and more</p>
+          </div>
+          <div class="card">
+            <div class="imgs">
+              <img src="1.jfif" alt="Artist Image" />
+              <img src="play.svg" alt="" />
+            </div>
+            <h4>Jay Chuo</h4>
+            <p>With Selena Gomez, Olivia Rodrigo, Katy Perry and more</p>
+          </div>
+          <div class="card">
+            <div class="imgs">
+              <img src="1.jfif" alt="Artist Image" />
+              <img src="play.svg" alt="" />
+            </div>
+            <h4>Jay Chuo</h4>
+            <p>With Selena Gomez, Olivia Rodrigo, Katy Perry and more</p>
+          </div>
+          <div class="card">
+            <div class="imgs">
+              <img src="1.jfif" alt="Artist Image" />
+              <img src="play.svg" alt="" />
+            </div>
+            <h4>Jay Chuo</h4>
+            <p>With Selena Gomez, Olivia Rodrigo, Katy Perry and more</p>
+          </div>
+          <div class="card">
+            <div class="imgs">
+              <img src="1.jfif" alt="Artist Image" />
+              <img src="play.svg" alt="" />
+            </div>
+            <h4>Jay Chuo</h4>
+            <p>With Selena Gomez, Olivia Rodrigo, Katy Perry and more</p>
+          </div>
+          <div class="card">
+            <div class="imgs">
+              <img src="1.jfif" alt="Artist Image" />
+              <img src="play.svg" alt="" />
+            </div>
+            <h4>Jay Chuo</h4>
+            <p>With Selena Gomez, Olivia Rodrigo, Katy Perry and more</p>
+          </div>
+          <div class="card">
+            <div class="imgs">
+              <img src="1.jfif" alt="Artist Image" />
+              <img src="play.svg" alt="" />
+            </div>
+            <h4>Jay Chuo</h4>
+            <p>With Selena Gomez, Olivia Rodrigo, Katy Perry and more</p>
+          </div>
+          <div class="card">
+            <div class="imgs">
+              <img src="1.jfif" alt="Artist Image" />
+              <img src="play.svg" alt="" />
+            </div>
+            <h4>Jay Chuo</h4>
+            <p>With Selena Gomez, Olivia Rodrigo, Katy Perry and more</p>
+          </div>
+        </div>
+        </div>
+        <div class="playbtn">
+          <div class="seekBarCard">
+              <div class="songTitle">No Song Selected</div>
+              <div class="songDuration">00 : 00</div>
+          </div>
+          <div class="playIcons">
+            <img class="invert" src="prevbutton.svg" alt="">
+            <img class="invert" src="playbutton.svg" alt="">
+            <img class="invert" src="nextbtn.svg" alt="">
+          </div>
+          <div class="seekBar" id="palet">
+            <div class="circle" id="movingCircle">
+
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
