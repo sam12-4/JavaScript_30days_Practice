@@ -6,11 +6,13 @@
     <link rel="icon" type="image" href="favicon.ico">
     <link rel="stylesheet" href="Day12_SpotifyClone.css" />
     <link rel="stylesheet" href="Day12_SpotifyClone_Utility.css" />
+    <link rel="stylesheet" href="Day12_SpotifyClone_Responsive.css" />
     <title>Spotify Clone</title>
   </head>
   <body>
     <div class="container">
       <div class="left">
+        <div class="closebtn"><img class="invert" src="close.svg" alt=""></div>
         <div class="home border-section">
           <div class="logo padding-left">
             <img class="invert" src="logo.svg" alt="logo" />
@@ -49,9 +51,12 @@
           <span>Cookies</span>
         </div>
       </div>
-      <div class="right m-1">
+      <div class="right">
         <div class="header">
           <div class="arrows">
+            <button>
+              <img class="hamburger" src="hamburgher.svg" alt="" />
+            </button>
             <button>
               <img src="leftArrow.svg" alt="" />
             </button>
@@ -74,7 +79,7 @@
             <a href="">show all</a>
           </div>
           <div class="cards">
-          <div class="card">
+          <div data-folder="songtype" class="card">
             <div class="imgs">
               <img src="1.jfif" alt="Artist Image" />
               <img src="play.svg" alt="" />
@@ -82,7 +87,7 @@
             <h4>Jay Chuo</h4>
             <p>With Selena Gomez, Olivia Rodrigo, Katy Perry and more</p>
           </div>
-          <div class="card">
+          <div data-folder="songtype2" class="card">
             <div class="imgs">
               <img src="1.jfif" alt="Artist Image" />
               <img src="play.svg" alt="" />
@@ -90,73 +95,24 @@
             <h4>Jay Chuo</h4>
             <p>With Selena Gomez, Olivia Rodrigo, Katy Perry and more</p>
           </div>
-          <div class="card">
-            <div class="imgs">
-              <img src="1.jfif" alt="Artist Image" />
-              <img src="play.svg" alt="" />
-            </div>
-            <h4>Jay Chuo</h4>
-            <p>With Selena Gomez, Olivia Rodrigo, Katy Perry and more</p>
-          </div>
-          <div class="card">
-            <div class="imgs">
-              <img src="1.jfif" alt="Artist Image" />
-              <img src="play.svg" alt="" />
-            </div>
-            <h4>Jay Chuo</h4>
-            <p>With Selena Gomez, Olivia Rodrigo, Katy Perry and more</p>
-          </div>
-          <div class="card">
-            <div class="imgs">
-              <img src="1.jfif" alt="Artist Image" />
-              <img src="play.svg" alt="" />
-            </div>
-            <h4>Jay Chuo</h4>
-            <p>With Selena Gomez, Olivia Rodrigo, Katy Perry and more</p>
-          </div>
-          <div class="card">
-            <div class="imgs">
-              <img src="1.jfif" alt="Artist Image" />
-              <img src="play.svg" alt="" />
-            </div>
-            <h4>Jay Chuo</h4>
-            <p>With Selena Gomez, Olivia Rodrigo, Katy Perry and more</p>
-          </div>
-          <div class="card">
-            <div class="imgs">
-              <img src="1.jfif" alt="Artist Image" />
-              <img src="play.svg" alt="" />
-            </div>
-            <h4>Jay Chuo</h4>
-            <p>With Selena Gomez, Olivia Rodrigo, Katy Perry and more</p>
-          </div>
-          <div class="card">
-            <div class="imgs">
-              <img src="1.jfif" alt="Artist Image" />
-              <img src="play.svg" alt="" />
-            </div>
-            <h4>Jay Chuo</h4>
-            <p>With Selena Gomez, Olivia Rodrigo, Katy Perry and more</p>
-          </div>
-          <div class="card">
-            <div class="imgs">
-              <img src="1.jfif" alt="Artist Image" />
-              <img src="play.svg" alt="" />
-            </div>
-            <h4>Jay Chuo</h4>
-            <p>With Selena Gomez, Olivia Rodrigo, Katy Perry and more</p>
-          </div>
+          
         </div>
         </div>
         <div class="playbtn">
           <div class="seekBarCard">
               <div class="songTitle">No Song Selected</div>
-              <div class="songDuration">00 : 00</div>
+              <div class="songEssentials">
+                <div class="songDuration">00 : 00</div>
+                <div class="setVolume">
+                  <img class="invert" id="volumeBtn" src="volume.svg" alt="">
+                  <input type="range" class="invert" name="volume" id="setSongVolume">
+                </div>
+              </div>
           </div>
           <div class="playIcons">
-            <img class="invert" src="prevbutton.svg" alt="">
+            <img class="invert" id="previousSong" src="prevbutton.svg" alt="">
             <img class="invert" src="playbutton.svg" alt="">
-            <img class="invert" src="nextbtn.svg" alt="">
+            <img class="invert" id="nextSong" src="nextbtn.svg" alt="">
           </div>
           <div class="seekBar" id="palet">
             <div class="circle" id="movingCircle">

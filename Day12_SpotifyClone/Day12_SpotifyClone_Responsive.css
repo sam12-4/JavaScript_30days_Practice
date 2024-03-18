@@ -1,0 +1,119 @@
+
+@media only screen and (max-width:280px){
+    .right .playbtn {
+        width: 92% !important;
+    }
+    
+    
+}
+
+@media only screen and (max-width:500px){
+    .card{
+        width: 75vw;
+    }
+    .right .playbtn {
+        width: 98%;
+    }
+}
+
+@media only screen and (max-width:1000px){
+    .card{
+        margin: 20px 26px;
+    }
+}
+
+
+@media only screen and (max-width: 768px){
+    .card img:last-child{
+        opacity: 1;
+    }
+    .seekBarCard{
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0px;
+    }
+
+    .header{
+        flex-direction: column;
+        gap:15px;
+    }
+
+    .call-to-action {
+        flex-direction: column;
+        gap: 25px;
+        align-items: center;
+        padding-bottom: 10px;
+    }
+        
+    .left{
+        width: 94vw;
+        padding: 0px 7px
+    }
+    .popular-artists h3:first-child{
+        font-size: 14px;
+    }
+    .popular-artists a{
+        font-size: 12px;
+    }
+
+    .arrows {
+        gap: 41px;
+        justify-content: center;
+    }
+    .songDetail h5{
+        font-size: 10px;
+    }
+    .playNow{
+        font-size: 12px;
+    }
+    .closebtn{
+        right: 30px;
+    }
+    .right .playbtn{
+        bottom:0;
+    }
+    .card{
+        margin: 20px 0px !important;
+    }
+    .card img:last-child{
+        bottom: 20px;
+    }
+    .songEssentials {
+        display: flex;
+        gap: 5px;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 5px;
+    }
+}
+
+@media only screen and (max-width: 1200px){
+    .left{
+        /* left: -100%; */
+        position:absolute;
+        transition: all 0.3s ease-in-out;
+        left: -115%;
+        z-index: 1;
+        width:300px;
+        background-color: black;
+        /* margin: 10px; */
+    }
+
+    .right {
+        width: 100vw;
+    }
+    .arrows button:first-child {
+        display:block;
+    } 
+    .closebtn{
+        display: block;
+    }
+
+    .cards{
+        padding: 10px 0px ;
+
+    }
+    .card-container{
+        height: 75vh;
+    }
+}

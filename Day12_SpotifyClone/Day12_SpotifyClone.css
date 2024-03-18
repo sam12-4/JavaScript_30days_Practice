@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+:root{
+  --playopacity : 0; 
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +16,9 @@ body {
 
 .container {
     display: flex;
-    margin: 7px 10px;
+    margin: 10px 10px;
+    height: 99vh;
+    overflow: hidden;
 }
 
 .left {
@@ -42,10 +48,12 @@ body {
 .library {
   background-color: #121212;
   margin-top: 8px;
+  height: 68vh !important;
 }
 
 .home {
   background-color: #121212;
+  height: 30vh;
 }
 
 .home ul li img {
@@ -86,7 +94,7 @@ body {
 .library {
   background-color: #121212;
   margin-top: 8px;
-  height: 70vh;
+  height: 69vh;
 }
 
 .library ul li:first-child .plus:hover {
@@ -103,6 +111,7 @@ body {
   display: flex;
   gap: 15px;
   flex-wrap: wrap;
+  padding: 30px 15px;
 }
 .left-footer span {
   font-weight: 400;
@@ -121,6 +130,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .arrows img {
@@ -174,8 +184,8 @@ body {
 
 .card-container {
     padding: 15px;
-    overflow-y: scroll;
-    height: 70vh;
+    overflow-y: auto;
+    height: 80vh;
 }
 
 .popular-artists{
@@ -215,18 +225,19 @@ body {
     background-color: #00e270;
     padding: 5px;
     border-radius: 16px;
-    opacity: 0;
+    opacity: var(--playopacity);
     transition: all 0.2s ease-in-out;
     cursor: pointer;
 }
 
 .card:hover img:last-child{
-    opacity: 1;
     bottom: 20px;
 }
 
 .card:hover{
     background-color:  #282828;
+    cursor: pointer;
+    --playopacity : 1;
 }
 
 .card {
@@ -255,7 +266,7 @@ body {
     background-color: #232425;
     position : absolute;
     bottom: 10px;
-    width: 98%;
+    width: 99%;
     padding: 5px;
     border-radius: 10px;
   }
@@ -274,7 +285,7 @@ body {
 
 .songsList {
     padding: 10px 15px;
-    overflow-y: scroll;
+    overflow-y: auto;
     height: 40vh;
     scroll-behavior: smooth;
 }
@@ -289,7 +300,7 @@ body {
     display: flex;
     margin: 10px 0px;
     position: relative;
-    padding: 10px 0px;
+    padding: 10px 2px;
     border-radius: 10px;
     border: 2px solid #282828;
     align-items: center;
@@ -332,4 +343,43 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 0px 15px;
+}
+
+.arrows img.hamburger {
+  width: 40px;
+  height: 36px;
+}
+
+.arrows button:first-child{
+  display: none;
+  width: 50px;
+  height: 50px;
+}
+
+.closebtn {
+  position: absolute;
+  right: 10px;
+  top: 15px;
+  display: none;
+  cursor: pointer;
+}
+
+.songEssentials {
+  display: flex;
+  gap: 24px;
+}
+
+.setVolume {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+#setSongVolume{
+  cursor: pointer;
+}
+
+.songDetail>h5 {
+  width: 110px;
 }
