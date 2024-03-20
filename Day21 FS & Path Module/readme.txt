@@ -1,0 +1,1 @@
+we can use fs and fs.promises in common js but we can use fs/promises as a promise in common js but we can await fs/promise in ecma script
