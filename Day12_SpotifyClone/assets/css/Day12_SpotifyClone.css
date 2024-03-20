@@ -259,7 +259,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 25px;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .right .playbtn {
@@ -382,4 +382,8 @@ body {
 
 .songDetail>h5 {
   width: 110px;
+}
+
+#volumeBtn{
+  cursor : pointer;
 }
