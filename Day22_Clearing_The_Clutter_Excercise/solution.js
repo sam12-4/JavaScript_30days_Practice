@@ -2,7 +2,7 @@ import path from "path"
 import fs from "fs/promises"
 import { writeFile } from 'fs/promises';
 
-let filePath = path.join("C:/projects/JavaScript%20Practice%2030%20Days%20Challenge/JavaScript-30days-Practice/Day22_Clearing_The_Clutter_Excercise", "files");
+let filePath = path.join(process.cwd(), "files");
 let lastFileName = path.basename(filePath);
 
 let fileContent = await fs.readdir(lastFileName);
@@ -31,7 +31,7 @@ async function createFolder(fileArray){
 
 async function appendFilesToFolder(folderArray, allFilesArray){
         allFilesArray.forEach(async (element)=>{
-            let filePath =path.join("C:/projects/JavaScript Practice 30 Days Challenge/JavaScript-30days-Practice/Day22_Clearing_The_Clutter_Excercise", element.split(".").pop())
+            let filePath =path.join(process.cwd(), element.split(".").pop())
             let writePath = await path.join(filePath, element)
             let content = writeFile(writePath, 'Content to write to the file')
             console.log(writePath);
@@ -45,6 +45,8 @@ async function main(){
 }
 
 main()
+
+
 
 
 
