@@ -60,13 +60,6 @@
         });
 
         document.getElementById("clear").addEventListener("click", async () => {
-            // console.log("Clearing data...");
-            // const response2 = await fetch("/deleteData", { method: "POST" });
-            // if(await response2.ok) {
-            //         console.log("Data deleted successfully");
-            //     } else {
-            //         console.error("Failed to delete data:", response.statusText);
-            //     }
             try {
                 const response2 = await fetch("/deleteData", { method: "POST" });
                 if (response2.ok) {

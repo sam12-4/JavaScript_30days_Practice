@@ -28,7 +28,7 @@ app.post("/saveData", async (req, res) => {
     }
 });
 
-app.post("/deleteData", async (req, res) => {
+app.post("/deleteData", async (req, res) => { 
     try {
         await EmployeeModel.deleteMany({})
     } catch (error) {
