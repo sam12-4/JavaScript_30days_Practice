@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .navbar{
+        @apply flex text-white p-3 justify-center md:text-cyan-400 sm:flex-row sm:text-fuchsia-800 sm:justify-between flex-col
+    }
+}
