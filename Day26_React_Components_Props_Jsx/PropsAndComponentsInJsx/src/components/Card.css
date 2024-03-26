@@ -1,0 +1,15 @@
+.card{
+    margin: 30px;
+    display: flex;
+    gap:10px;
+    flex-direction: column;
+    padding: 10px;
+    height: 250px;
+    width: 250px;
+    overflow: hidden;
+    
+}
+
+.card>img{
+    height: 150px;
+}
