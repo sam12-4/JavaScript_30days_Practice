@@ -1,0 +1,10 @@
+@media only screen and (max-width: 300px)  {
+    .buttons{
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+body{
+    background-color: #8e9191;
+}
