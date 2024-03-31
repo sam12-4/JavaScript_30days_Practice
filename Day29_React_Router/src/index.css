@@ -1,0 +1,33 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+nav{
+  display: flex;
+  background-color: black;
+  color:white;
+
+  gap: 20px;
+  font-size: large;
+  margin-bottom: 14px;
+  
+ 
+}
+
+nav a{
+  padding: 20px;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+body{
+  text-align: center;
+}
+
+.nav-active{
+  background-color: red;
+}
